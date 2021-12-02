@@ -1,0 +1,9 @@
+#!/bin/sh
+# Usage: run lang day part
+if [ "$1" = "hs" ]; then
+	stack run "$2" "$3"
+fi
+if [ "$1" = "rs" ]; then
+	cargo run "$2" "$3"
+fi
+

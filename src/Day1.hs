@@ -5,6 +5,12 @@ import Data.List
 
 ---- ( Part A ) ----
 -- x is the new value, y is the old accumulated value
+part1 :: IO ()
+part1 = putStrLn $ "Day 1, Part 1: " ++ show (nDepthIncrease input)
+
+part2 :: IO ()
+part2 = putStrLn $ "Day 1, Part 2: " ++ show (nThreeMeasureIncrease input)
+
 nDepthIncrease :: [Int] -> Int
 nDepthIncrease []   = 0
 nDepthIncrease list = snd (foldl (\(y, acc) x -> (x, acc + increased x y)) (maximum list, 0) list)
