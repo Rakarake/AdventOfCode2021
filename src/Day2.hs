@@ -1,14 +1,12 @@
 module Day2 where
 
 part1 = do
-   putStrLn "Day 2, Part 1: "
    contents <- readFile "src/day2-input"
    let (nHorizontal, nVertical) = parseInputPartA $ lines contents
    putStrLn $ "Horizontal: " ++ show nHorizontal ++ ", Vertical: " ++ show nVertical
    putStrLn $ "Product: " ++ show (nHorizontal * nVertical)
 
 part2 = do
-   putStrLn "Day 2, Part 2: "
    contents <- readFile "src/day2-input"
    let (nHorizontal2, nVertical2, nAim) = parseInputPartB $ lines contents
    putStrLn $ "Horizontal: " ++ show nHorizontal2 ++

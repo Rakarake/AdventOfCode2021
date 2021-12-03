@@ -6,10 +6,10 @@ import Data.List
 ---- ( Part A ) ----
 -- x is the new value, y is the old accumulated value
 part1 :: IO ()
-part1 = putStrLn $ "Day 1, Part 1: " ++ show (nDepthIncrease input)
+part1 = print $ nDepthIncrease input
 
 part2 :: IO ()
-part2 = putStrLn $ "Day 1, Part 2: " ++ show (nThreeMeasureIncrease input)
+part2 = print $ nThreeMeasureIncrease input
 
 nDepthIncrease :: [Int] -> Int
 nDepthIncrease []   = 0
